@@ -9,13 +9,27 @@
 </head>
 
 <body class="stackedit">
-  <div class="stackedit__html"><ul>
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
 <li><a href="#digit-dp">Digit DP</a></li>
-<li><a href="#number-of-sub-arrays-with-sum-equal-to-k">Number of Sub-arrays with Sum = k</a></li>
-<li><a href="#calculating-prexors-in-a-tree-as-a-dsu-application">Calculating pre-xors in a Tree (DSU application)</a></li>
-<li><a href="#interesting-application-of-binary-searching">Interesting Application of Binary Searching</a></li>
+<li><a href="#number-of-sub-arrays-with-sum-equal-to-k">Number of Sub-arrays with Sum equal to k</a></li>
+<li><a href="#calculating-prexors-in-a-tree-as-a-dsu-application">Calculating prexors in a Tree as a DSU application</a></li>
+<li><a href="#interesting-application-of-binary-searching">Interesting Application of Binary Searching</a>
+<ul>
+<li><a href="#what-is-done">What is done?</a></li>
+<li><a href="#problem">Problem</a></li>
+<li><a href="#solution">Solution</a></li>
 </ul>
-<h1 id="digit-dp">Digit DP</h1>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="digit-dp">Digit DP</h1>
 <p>Here is  my Digit DP Implementation</p>
 <pre class=" language-cpp"><code class="prism  language-cpp">	<span class="token comment">/*dp[pos][cnt][flag] -&gt; dp form with states*/</span>
 
@@ -172,7 +186,7 @@
 <p><em>In, normal binary search we search for first/suitable occurence of the correct answer. Here also we do something similar.</em></p>
 <h2 id="problem">Problem</h2>
 <p>You are to form an MST such that the no. of edges in the MST that are connected to the index 1 is k which is given.</p>
-<p>Simply put,  <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi><mi>d</mi><mi>g</mi><mi>e</mi><mi>s</mi><mo>∈</mo><mi>M</mi><mi>S</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">Edges \in MST</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.88888em; vertical-align: -0.19444em;"></span><span class="mord mathdefault" style="margin-right: 0.05764em;">E</span><span class="mord mathdefault">d</span><span class="mord mathdefault" style="margin-right: 0.03588em;">g</span><span class="mord mathdefault">e</span><span class="mord mathdefault">s</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord mathdefault" style="margin-right: 0.10903em;">M</span><span class="mord mathdefault" style="margin-right: 0.05764em;">S</span><span class="mord mathdefault" style="margin-right: 0.13889em;">T</span></span></span></span></span> connected to <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">1</span></span></span></span></span> is equal to <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.69444em; vertical-align: 0em;"></span><span class="mord mathdefault" style="margin-right: 0.03148em;">k</span></span></span></span></span>.</p>
+<p>Simply put,  <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi><mi>d</mi><mi>g</mi><mi>e</mi><mi>s</mi><mo>∈</mo><mi>M</mi><mi>S</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">Edges \in MST</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.8888799999999999em; vertical-align: -0.19444em;"></span><span class="mord mathdefault" style="margin-right: 0.05764em;">E</span><span class="mord mathdefault">d</span><span class="mord mathdefault" style="margin-right: 0.03588em;">g</span><span class="mord mathdefault">e</span><span class="mord mathdefault">s</span><span class="mspace" style="margin-right: 0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right: 0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord mathdefault" style="margin-right: 0.10903em;">M</span><span class="mord mathdefault" style="margin-right: 0.05764em;">S</span><span class="mord mathdefault" style="margin-right: 0.13889em;">T</span></span></span></span></span> connected to <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">1</span></span></span></span></span> is equal to <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.69444em; vertical-align: 0em;"></span><span class="mord mathdefault" style="margin-right: 0.03148em;">k</span></span></span></span></span>.</p>
 <h2 id="solution">Solution</h2>
 <p>We introduce the following idea - <strong>to prioritize the edges connected to 1 we add a separate suitable weight to the edges that have the node 1 in them</strong> (during the formation of the MST).<br>
 Now we binary search over the suitable weight.</p>
@@ -284,7 +298,9 @@ Now we binary search over the suitable weight.</p>
         <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>    
 </code></pre>
-</div>
+
+    </div>
+  </div>
 </body>
 
 </html>
