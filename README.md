@@ -4,9 +4,10 @@ Project to dump π% of our notes and findings. A blog of sorts.
 
 ## People Associated:
 - Alapan Chaudhuri (owner)
-- Kunwar Shaanjeet Singh Grover (owner)
-- Zeeshan Ahmed (owner)
-- Shreyas Pradhan (owner)
+- Kunwar Shaanjeet Singh Grover
+- Shivansh S
+- Shreyas Pradhan
+- Zeeshan Ahmed
 
 **Visit [here](room333.github.io) for more information**
 
