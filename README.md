@@ -8,7 +8,8 @@ Project to dump π% of our notes and findings. A blog of sorts.
 2. If you are adding a single piece rather than a big set use **Singular Notes** section in the Home Page.
 3. If you are writing on a niche topic try to be elaborate.
 4. If you are writing on a well explored topic try to be as precise as possible.
-5. If you want **create a References page** and do whatever the hell you want in it. Any random shit can be put in there. But please not on the Home Page.
+5. Do whatever the hell you want in the **References** page. Any random shit can be put in there. But please not on the Home Page.
+6. Anyone bored af? Please make this site beautiful :P
 
 ## Why set this org?
 
@@ -25,9 +26,9 @@ Also, this repo is mainly for us to easily access some of our note and findings;
 **Visit [here](room333.github.io) for more information**
 
 ## People Associated:
-- Alapan Chaudhuri (*started by*)
-- Kunwar Shaanjeet Singh Grover (*motivated by*)
-- Zeeshan Ahmed (*supported by*)
+- Alapan Chaudhuri
+- Kunwar Shaanjeet Singh Grover
+- Zeeshan Ahmed
 - Shreyas Pradhan
 - Abhishek Mittal
 - Shivansh Subramanian
