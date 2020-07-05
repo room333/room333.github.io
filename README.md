@@ -2,6 +2,14 @@
 
 Project to dump π% of our notes and findings. A blog of sorts.
 
+## To The Contributors
+
+1. If you are adding a collection of notes add them under **Collective Notes** in the Home Page.
+2. If you are adding a single piece rather than a big set use **Singular Notes** section in the Home Page.
+3. If you are writing on a niche topic try to be elaborate.
+4. If you are writing on a well explored topic try to be as precise as possible.
+5. If you want **create a References page** and do whatever the hell you want in it. Any random shit can be put in there. But please not on the Home Page.
+
 ## Why set this org?
 
 *By Alapan Chaudhuri*
