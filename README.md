@@ -3,9 +3,10 @@
 Project to dump π% of our notes and findings. A blog of sorts.
 
 ## People Associated:
-- Alapan Chaudhuri (owner)
+- Abhishek Mittal
+- Alapan Chaudhuri (started by)
 - Kunwar Shaanjeet Singh Grover
-- Shivansh S
+- Shivansh Subramanian
 - Shreyas Pradhan
 - Zeeshan Ahmed
 
