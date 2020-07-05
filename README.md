@@ -2,16 +2,6 @@
 
 Project to dump π% of our notes and findings. A blog of sorts.
 
-## People Associated:
-- Abhishek Mittal
-- Alapan Chaudhuri (started by)
-- Kunwar Shaanjeet Singh Grover
-- Shivansh Subramanian
-- Shreyas Pradhan
-- Zeeshan Ahmed
-
-**Visit [here](room333.github.io) for more information**
-
 ## Why set this org?
 
 *By Alapan Chaudhuri*
@@ -23,3 +13,13 @@ Sir Isaac Newton once popularly said, "If I have seen further then it is only be
 Thinking along those lines, this org is my attempt to learn writing academic notes online and share them to whosoever needs them.
 
 Also, this repo is mainly for us to easily access some of our note and findings; for obviously it is quite impossible to have more than majority of them online and public.
+
+**Visit [here](room333.github.io) for more information**
+
+## People Associated:
+- Alapan Chaudhuri (*started by*)
+- Kunwar Shaanjeet Singh Grover (*motivated by*)
+- Zeeshan Ahmed (*supported by*)
+- Shreyas Pradhan
+- Abhishek Mittal
+- Shivansh Subramanian
