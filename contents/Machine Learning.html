@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Machine Learning</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#introduction-to-machine-learning">Introduction to Machine Learning</a>
+<ul>
+<li><a href="#scikit-learn-models">Scikit-Learn Models</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="introduction-to-machine-learning">Introduction to Machine Learning</h1>
+<ul>
+<li><strong>Supervised Learning</strong>: data is labeled and the program learns to predict the output from the input data</li>
+<li><strong>Unsupervised Learning</strong>: data is unlabeled and the program learns to recognize the inherent structure in the input data</li>
+</ul>
+<h2 id="scikit-learn-models">Scikit-Learn Models</h2>
+<h3 id="linear-regression"><a href="http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html">Linear Regression</a></h3>
+<p><strong>Import and create the model:</strong></p>
+<pre class=" language-py"><code class="prism  language-py"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>linear_model <span class="token keyword">import</span> LinearRegression
+your_model <span class="token operator">=</span> LinearRegression<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p><strong>Fit:</strong><br>
+your_model.fit(x_training_data, y_training_data)</p>
+<ul>
+<li><code>.coef_</code>: contains the coefficients</li>
+<li><code>.intercept_</code>: contains the intercept</li>
+</ul>
+<p><strong>Predict:</strong><br>
+predictions = your_model.predict(your_x_data)</p>
+<ul>
+<li><code>.score()</code>: returns the coefficient of determination R²</li>
+</ul>
+<hr>
+<h3 id="naive-bayes"><a href="http://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.MultinomialNB.html#sklearn.naive_bayes.MultinomialNB">Naive Bayes</a></h3>
+<p><strong>Import and create the model:</strong></p>
+<pre class=" language-py"><code class="prism  language-py"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>naive_bayes <span class="token keyword">import</span> MultinomialNB
+your_model <span class="token operator">=</span> MultinomialNB<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p><strong>Fit:</strong><br>
+your_model.fit(x_training_data, y_training_data)</p>
+<p><strong>Predict:</strong></p>
+<pre class=" language-py"><code class="prism  language-py"><span class="token comment"># Returns a list of predicted classes - one prediction for every data point</span>
+predictions <span class="token operator">=</span> your_model<span class="token punctuation">.</span>predict<span class="token punctuation">(</span>your_x_data<span class="token punctuation">)</span>
+
+<span class="token comment"># For every data point, returns a list of probabilities of each class</span>
+probabilities <span class="token operator">=</span> your_model<span class="token punctuation">.</span>predict_proba<span class="token punctuation">(</span>your_x_data<span class="token punctuation">)</span>
+</code></pre>
+<hr>
+<h3 id="k-nearest-neighbors"><a href="http://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html#sklearn.neighbors.KNeighborsClassifier">K-Nearest Neighbors</a></h3>
+<p><strong>Import and create the model:</strong></p>
+<pre class=" language-py"><code class="prism  language-py"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>neigbors <span class="token keyword">import</span> KNeighborsClassifier
+your_model <span class="token operator">=</span> KNeighborsClassifier<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p><strong>Fit:</strong></p>
+<pre class=" language-py"><code class="prism  language-py">your_model<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>x_training_data<span class="token punctuation">,</span> y_training_data<span class="token punctuation">)</span>
+</code></pre>
+<p><strong>Predict:</strong></p>
+<pre class=" language-py"><code class="prism  language-py"><span class="token comment"># Returns a list of predicted classes - one prediction for every data point</span>
+predictions <span class="token operator">=</span> your_model<span class="token punctuation">.</span>predict<span class="token punctuation">(</span>your_x_data<span class="token punctuation">)</span>
+
+<span class="token comment"># For every data point, returns a list of probabilities of each class</span>
+probabilities <span class="token operator">=</span> your_model<span class="token punctuation">.</span>predict_proba<span class="token punctuation">(</span>your_x_data<span class="token punctuation">)</span>
+</code></pre>
+<hr>
+<h3 id="k-means"><a href="http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html">K-Means</a></h3>
+<p><strong>Import and create the model:</strong></p>
+<pre class=" language-py"><code class="prism  language-py"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>cluster <span class="token keyword">import</span> KMeans
+your_model <span class="token operator">=</span> KMeans<span class="token punctuation">(</span>n_clusters<span class="token operator">=</span><span class="token number">4</span><span class="token punctuation">,</span> init<span class="token operator">=</span><span class="token string">'random'</span><span class="token punctuation">)</span>
+</code></pre>
+<ul>
+<li><code>n_clusters</code>: number of clusters to form and number of centroids to generate</li>
+<li><code>init</code>: method for initialization
+<ul>
+<li><code>k-means++</code>: K-Means++ [default]</li>
+<li><code>random</code>: K-Means</li>
+</ul>
+</li>
+<li><code>random_state</code>: the seed used by the random number generator [optional]</li>
+</ul>
+<p><strong>Fit:</strong></p>
+<pre class=" language-py"><code class="prism  language-py">your_model<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>x_training_data<span class="token punctuation">)</span>
+</code></pre>
+<p><strong>Predict:</strong></p>
+<pre class=" language-py"><code class="prism  language-py">predictions <span class="token operator">=</span> your_model<span class="token punctuation">.</span>predict<span class="token punctuation">(</span>your_x_data<span class="token punctuation">)</span>
+</code></pre>
+<hr>
+<h3 id="validating-the-model"><a href="http://scikit-learn.org/stable/modules/classes.html#sklearn-metrics-metrics">Validating the Model</a></h3>
+<p><strong>Import and print accuracy, recall, precision, and F1 score:</strong></p>
+<pre class=" language-py"><code class="prism  language-py"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>metrics <span class="token keyword">import</span> accuracy_score<span class="token punctuation">,</span> recall_score<span class="token punctuation">,</span> precision_score<span class="token punctuation">,</span> f1_score
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>accuracy_score<span class="token punctuation">(</span>true_labels<span class="token punctuation">,</span> guesses<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>recall_score<span class="token punctuation">(</span>true_labels<span class="token punctuation">,</span> guesses<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>precision_score<span class="token punctuation">(</span>true_labels<span class="token punctuation">,</span> guesses<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>f1_score<span class="token punctuation">(</span>true_labels<span class="token punctuation">,</span> guesses<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<p><strong>Import and print the confusion matrix:</strong></p>
+<pre class=" language-py"><code class="prism  language-py"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>metrics <span class="token keyword">import</span> confusion_matrix
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>confusion_matrix<span class="token punctuation">(</span>true_labels<span class="token punctuation">,</span> guesses<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<hr>
+<h3 id="training-sets-and-test-sets"><a href="http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html">Training Sets and Test Sets</a></h3>
+<pre class=" language-py"><code class="prism  language-py"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>model_selection <span class="token keyword">import</span> train_test_split
+
+x_train<span class="token punctuation">,</span> x_test<span class="token punctuation">,</span> y_train<span class="token punctuation">,</span> y_test <span class="token operator">=</span> train_test_split<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> train_size<span class="token operator">=</span><span class="token number">0.8</span><span class="token punctuation">,</span> test_size<span class="token operator">=</span><span class="token number">0.2</span><span class="token punctuation">)</span>
+</code></pre>
+<ul>
+<li><code>train_size</code>: the proportion of the dataset to include in the train split</li>
+<li><code>test_size</code>: the proportion of the dataset to include in the test split</li>
+<li><code>random_state</code>: the seed used by the random number generator</li>
+</ul>
+
+    </div>
+  </div>
+</body>
+
+</html>
