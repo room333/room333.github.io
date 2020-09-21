@@ -32,3 +32,4 @@ Also, this repo is mainly for us to easily access some of our note and findings;
 - Shreyas Pradhan
 - Abhishek Mittal
 - Shivansh Subramanian
+- Hrishi Narayanan
