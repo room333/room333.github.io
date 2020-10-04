@@ -1,6 +1,6 @@
 # Room333
 
-Project to dump π% of our notes and findings. A blog of sorts.
+Project to dump π% of our notes and findings. A blog of sorts*.
 
 ## To The Contributors
 
@@ -33,3 +33,5 @@ Also, this repo is mainly for us to easily access some of our note and findings;
 - Abhishek Mittal
 - Shivansh Subramanian
 - Hrishi Narayanan
+
+*Credits to Siddharth Bhat ([bollu](https://bollu.github.io))
