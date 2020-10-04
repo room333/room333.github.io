@@ -34,4 +34,4 @@ Also, this repo is mainly for us to easily access some of our note and findings;
 - Shivansh Subramanian
 - Hrishi Narayanan
 
-* *Credits to Siddharth Bhat ([bollu](https://bollu.github.io))*
+*Credits to Siddharth Bhat ([bollu](https://bollu.github.io))
