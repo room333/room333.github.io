@@ -4,12 +4,9 @@ Project to dump π% of our notes and findings. A blog of sorts*.
 
 ## To The Contributors
 
-1. If you are adding a collection of notes add them under **Collective Notes** in the Home Page.
-2. If you are adding a single piece rather than a big set use **Singular Notes** section in the Home Page.
-3. If you are writing on a niche topic try to be elaborate.
-4. If you are writing on a well explored topic try to be as precise as possible.
-5. Do whatever the hell you want in the **References** page. Any random shit can be put in there. But please not on the Home Page.
-6. Anyone bored af? Please make this site beautiful :P
+1. **Index** contains a bunch of structured collective notes. 
+2. **Random Bulletin** exits. Attach anything you fancy taht you wrote here.
+3. Anyone bored af? Plox make this site beautiful :P
 
 ## Why set this org?
 
